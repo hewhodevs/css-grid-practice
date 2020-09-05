@@ -9,12 +9,22 @@
 #main {
   flex-grow: 1;
   min-height: 100vh;
-  min-width: 500px;
+  min-width: 700px;
   background-color: cornflowerblue;
 }
 #content {
-  flex-grow: 1.6;
+  flex-grow: 1;
   min-height: 100vh;
-  min-width: 800px;
   background-color: crimson;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+#about, #projects {
+  flex-grow: 1;
+  min-width: 400px;
+  height: 100vh;
+}
+
+#about {background-color: yellow;}
+#projects {background-color: teal;}
