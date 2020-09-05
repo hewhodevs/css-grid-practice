@@ -1,28 +1,30 @@
-body {
+.container {
+  display: grid;
   height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1fr 1fr;
+  grid-template-areas: 
+    "main about project-summary"
+    "main about project-1"
+    "main project-2 project-3";
 }
 
-/* grid layout */
-.parent {
-    display: grid;
-    grid-template-columns: 1.3fr repeat(2, 1fr);
-    grid-template-rows: 0.6fr repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  
-  .div1 { grid-area: 1 / 1 / 4 / 2; }
-  .div2 { grid-area: 1 / 2 / 3 / 3; }
-  .div3 { grid-area: 1 / 3 / 2 / 4; }
-  .div4 { grid-area: 3 / 2 / 4 / 3; }
-  .div5 { grid-area: 3 / 3 / 4 / 4; }
-  .div6 { grid-area: 2 / 3 / 3 / 4; }
-
-  /* background colours */
-  .div1 {background-color: #00354b;}
-  .div2 {background-color: #3b5a6b;}
-  .div3 {background-color: #f7cf91;}
-  .div4, .div5, .div6 {background-color: #efefef;}
+/* background colours */
+#main {
+  grid-area: main;
+  background-color: #00354b;
+}
+#about {
+  grid-area: about;
+  background-color: #3b5a6b;
+}
+#project-summary {
+  grid-area: project-summary;
+  background-color: #f7cf91;
+}
+.project {background-color: #efefef;}
+#project-1 {grid-area: project-1;}
+#project-2 {grid-area: project-2;}
+#project-3 {grid-area: project-3;}
