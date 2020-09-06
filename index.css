@@ -26,6 +26,6 @@
 #col4 {
   height: 100vh;
   flex-grow: 1;
-  min-width: 400px;
+  min-width: 500px;
   background-color: rgb(235, 132, 255);
 }
