@@ -8,7 +8,7 @@
 #col1 {
   height: 100vh;
   flex-grow: 1;
-  min-width: 700px;
+  min-width: 600px;
   background-color: rgb(89, 160, 218);
 }
 #col2 {
@@ -20,7 +20,7 @@
 #col3 {
   height: 100vh;
   flex-grow: 1;
-  min-width: 400px;
+  min-width: 500px;
   background-color: rgb(255, 220, 103);
 }
 #col4 {
